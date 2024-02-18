@@ -2,6 +2,8 @@
     --primary-color: #434455;
     --secondary-color: #2e2f42;
     --button-background-color: #4d5ae5;
+    --visited-links: #b900b9;
+    --hover-color: #0606bd;
     --heading-font-family: "Raleway",
         sans-serif;
     --text-font-family: "Roboto",
@@ -25,42 +27,59 @@ ul {
 /* Information about Logo */
 .logo::before {
     content: "WEB";
-    color: #4d5ae5;
-    font-family: "Raleway", sans-serif;
+    color: var(--button-background-color);
+    font-family: var(--heading-font-family);
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16667em;
+    line-height: 1.16667;
 }
+.atribut-logo {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
 /* Information about links */
 .global-header .link-color a {
     font-weight: 500;
-    font-size: 1px;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-color);
 }
+.link-color a:visited {
+    color: var(--visited-links);
+}
 /* Information about contacts data */
 .global-header .contacts-data a {
-    font-size: 1px;
+    font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: var(--primary-color);
 }
 
+.hover-link:hover a {
+    color: var(--hover-color);
+}
+
 /* Information about buttons style */
 .btn-filter {
-border: 1px solid #e7e9fc;
-border-radius: 4px;
-padding: 12px 24px;
-width: 116px;
-height: 48px;
-background-color: #f4f4fd;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5em;
-letter-spacing: 0.04em;
-text-align: center;
-color: #4d5ae5;
-cursor: pointer;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background-color: #f4f4fd;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #4d5ae5;
+    cursor: pointer;
 }
 .btn-filter:hover {
     background-color: var(--button-background-color);
@@ -106,6 +125,15 @@ cursor: pointer;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16667;
+}
+.footer-logo-studio {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
 }
 .footer-description {
     font-size: 16px;
